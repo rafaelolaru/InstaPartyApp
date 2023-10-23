@@ -10,4 +10,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\InstaPartyApp.BusinessLocig\InstaPartyApp.BusinessLogic.csproj" />
+    <ProjectReference Include="..\InstaPartyApp.DataAccess\InstaPartyApp.DataAccess.csproj" />
+    <ProjectReference Include="..\InstaPartyApp.Models\InstaPartyApp.Models.csproj" />
+  </ItemGroup>
+
 </Project>
