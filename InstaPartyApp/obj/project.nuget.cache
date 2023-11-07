@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "iWUSgAdnK/LAemDwBMI5J3n6U73CbxHfQwQPwgx0tU/k951/HRMpIgevqg3f5w3afOrF814lEA5hAlK/kdf7Qw==",
+  "dgSpecHash": "0Rl0duV5mve1JJYFaA633+KxBLuTbrmiDcpk6heQIczdD20xuPPalD61Umlx/Qs7gJ/dlj4a8RyGvI4JQJ8VmQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\InstaPartyApp\\InstaPartyApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\olaru\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\olaru\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\olaru\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.24\\microsoft.aspnetcore.authentication.jwtbearer.6.0.24.nupkg.sha512",
     "C:\\Users\\olaru\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\olaru\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\olaru\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",

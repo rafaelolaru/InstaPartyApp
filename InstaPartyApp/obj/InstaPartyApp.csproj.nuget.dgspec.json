@@ -32,7 +32,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\InstaPartyApp.DataAccess\\InstaPartyApp.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\InstaPartyApp.DataAccess\\InstaPartyApp.DataAccess.csproj"
+              },
+              "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\InstaPartyApp.Models\\InstaPartyApp.Models.csproj": {
+                "projectPath": "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\InstaPartyApp.Models\\InstaPartyApp.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -245,6 +252,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.24, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
