@@ -1,5 +1,27 @@
- InstaPartyApp is an application that aims to simplify the process of organizing a party while also helping you manage the number of people that are going to attend it. It is also an excellent tool for partygoers to discover and enjoy new clubs with different themes.
- Our innovative application will partner with multiple clubs in your city, allowing them to gain publicity through small trivia games that they can pick the questions and answers to and even the rewards for completing the quiz in a certain amount of time.
- The users will be able to see all the incoming parties for the current week, their themes, time, place, and details such as the type of music and outfit required. They can also take a quiz prepared by the host that will be released at random hours in order to win different prizes awarded by the club.
+# Ipafe
 
-LINK: https://www.figma.com/proto/NXYGVlYGN3vFRO5oVHF97M/InstaPartyV1?type=design&node-id=7-68&t=uA8V6tw2j0AJTjvK-0&scaling=scale-down&page-id=0%3A1
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
