@@ -12,3 +12,17 @@ C:\Users\olaru\Documents\GitHub\Try2\InstaPartyApp\DataAccessLayer\obj\Debug\net
 C:\Users\olaru\Documents\GitHub\Try2\InstaPartyApp\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
 C:\Users\olaru\Documents\GitHub\Try2\InstaPartyApp\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.runtimeconfig.json
 C:\Users\olaru\Documents\GitHub\Try2\InstaPartyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\olaru\Documents\GitHub\InstaPartyApp\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+C:\Users\olaru\Documents\GitHub\InstaPartyApp\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.runtimeconfig.json
+C:\Users\olaru\Documents\GitHub\InstaPartyApp\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\olaru\Documents\GitHub\InstaPartyApp\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\olaru\Documents\GitHub\InstaPartyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\olaru\Documents\GitHub\InstaPartyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\olaru\Documents\GitHub\InstaPartyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\olaru\Documents\GitHub\InstaPartyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\olaru\Documents\GitHub\InstaPartyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\olaru\Documents\GitHub\InstaPartyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+C:\Users\olaru\Documents\GitHub\InstaPartyApp\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+C:\Users\olaru\Documents\GitHub\InstaPartyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\olaru\Documents\GitHub\InstaPartyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\olaru\Documents\GitHub\InstaPartyApp\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll

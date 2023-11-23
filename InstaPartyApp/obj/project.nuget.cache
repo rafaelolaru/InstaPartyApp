@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X5omRfK6VvWZDI52irP36tpmEJejA6GNqxX7+ebONiTbtlJeK3wwBwFWlztkOYqQAugij8pahd7oP4C1CDnuyw==",
+  "dgSpecHash": "1KDmIlLMlihSegSOvdKZAldAIvI/cSggisvdf/Tm0ViqXAnpgcB9XiG2gs9Qxy6oWnYoGeaWbQItiY1BmqQXAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\olaru\\Documents\\GitHub\\Try2\\InstaPartyApp\\InstaPartyApp\\InstaPartyApp.csproj",
+  "projectFilePath": "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\InstaPartyApp\\InstaPartyApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\olaru\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\olaru\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

@@ -1,4 +1,4 @@
-﻿using DataAccessLayer.Models;
+using DataAccessLayer.Models;
 using Microsoft.EntityFrameworkCore;
 using DataAccessLayer;
 using Microsoft.AspNetCore.Identity;
@@ -8,7 +8,7 @@ namespace InstaPartyApp.Services
     public interface IAuthService
     {
         User ValidateUser(string username, string password);
-        User CreateUser(string username, string password);
+        User CreateUser(RegisterModel register);
         object GetUserByUsername(object username);
     }
 
@@ -34,18 +34,28 @@ namespace InstaPartyApp.Services
             return null;
         }
 
-        public User CreateUser(string username, string password)
+        public User CreateUser(RegisterModel registerModel)
         {
-            var hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
-            
-            var user = new User { Username = username, PasswordHash = hashedPassword };
+            var hashedPassword = BCrypt.Net.BCrypt.HashPassword(registerModel.Password);
+
+            var user = new User
+            {
+                Username = registerModel.Username,
+                PasswordHash = hashedPassword,
+                age = registerModel.age,
+                Email = registerModel.Email,
+                City = registerModel.City,
+                PhoneNumber = registerModel.PhoneNumber
+            };
             _context.Users.Add(user);
             _context.SaveChanges();
 
             return user;
         }
 
-        public object GetUserByUsername(object username)
+
+
+    public object GetUserByUsername(object username)
         {
             return _context.Users
                            .AsNoTracking()

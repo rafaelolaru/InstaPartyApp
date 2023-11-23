@@ -1,4 +1,4 @@
-﻿using System.Xml.Linq;
+using System.Xml.Linq;
 
 namespace DataAccessLayer.Models
 {
@@ -11,7 +11,10 @@ namespace DataAccessLayer.Models
         public int UserId { get; set; }
         public string Username { get; set; }
         public string PasswordHash { get; set; }
+        public int age { get; set; }
+        public string Email { get; set; }
+        public string City { get; set; }
+        public string PhoneNumber { get; set; }
 
-        
     }
 }

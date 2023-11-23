@@ -1,4 +1,4 @@
-﻿namespace DataAccessLayer.Models
+namespace DataAccessLayer.Models
 {
     public class Party
     {
@@ -9,5 +9,6 @@
         public int PartyId { get; set; }
         public string Name { get; set; }
         public DateTime Date { get; set; }
+        public string Description { get; set; }
     }
 }

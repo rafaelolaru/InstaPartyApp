@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\olaru\\Documents\\GitHub\\Try2\\InstaPartyApp\\DataAccessLayer\\DataAccessLayer.csproj": {}
+    "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\DataAccessLayer\\DataAccessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\olaru\\Documents\\GitHub\\Try2\\InstaPartyApp\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\olaru\\Documents\\GitHub\\Try2\\InstaPartyApp\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\olaru\\Documents\\GitHub\\Try2\\InstaPartyApp\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\olaru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\olaru\\Documents\\GitHub\\Try2\\InstaPartyApp\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

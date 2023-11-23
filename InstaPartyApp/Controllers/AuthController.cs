@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using DataAccessLayer.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -30,7 +30,7 @@ namespace InstaPartyApp.Controllers
             var user = _authService.ValidateUser(login.Username, login.Password);
             if (user != null)
             {
-                var token = GenerateJwtToken(user.Username);
+                var token = GenerateJwtToken(user.Username, user.UserId);
                 return Ok(new { Token = token });
             }
 
@@ -39,7 +39,7 @@ namespace InstaPartyApp.Controllers
 
 
         [HttpPost("register")]
-        public IActionResult Register([FromBody] LoginModel register)
+        public IActionResult Register([FromBody] RegisterModel register)
         {
             var existingUser = _authService.GetUserByUsername(register.Username);
             if (existingUser != null)
@@ -47,13 +47,13 @@ namespace InstaPartyApp.Controllers
                 return BadRequest("User already exists.");
             }
 
-            var newUser = _authService.CreateUser(register.Username, register.Password);
+            var newUser = _authService.CreateUser(register);
 
-            var token = GenerateJwtToken(newUser.Username);
+            var token = GenerateJwtToken(newUser.Username, newUser.UserId);
             return Ok(new { Token = token });
         }
 
-        private string GenerateJwtToken(string username)
+        private string GenerateJwtToken(string username,int userId)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
@@ -61,6 +61,7 @@ namespace InstaPartyApp.Controllers
             var claims = new[]
             {
                 new Claim(JwtRegisteredClaimNames.Sub, username),
+                new Claim(ClaimTypes.NameIdentifier, userId.ToString())
             };
 
             var token = new JwtSecurityToken(
