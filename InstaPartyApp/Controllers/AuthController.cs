@@ -28,7 +28,6 @@ namespace InstaPartyApp.Controllers
         public IActionResult Login([FromBody] LoginModel login)
         {
             var user = _authService.ValidateUser(login.Username, login.Password);
-
             if (user != null)
             {
                 var token = GenerateJwtToken(user.Username);
@@ -48,8 +47,7 @@ namespace InstaPartyApp.Controllers
                 return BadRequest("User already exists.");
             }
 
-            var hashedPassword = _passwordHasher.HashPassword(register.Password);
-            var newUser = _authService.CreateUser(register.Username, hashedPassword);
+            var newUser = _authService.CreateUser(register.Username, register.Password);
 
             var token = GenerateJwtToken(newUser.Username);
             return Ok(new { Token = token });

@@ -1,6 +1,7 @@
 ﻿using DataAccessLayer.Models;
 using Microsoft.EntityFrameworkCore;
 using DataAccessLayer;
+using Microsoft.AspNetCore.Identity;
 
 namespace InstaPartyApp.Services
 {
@@ -23,6 +24,7 @@ namespace InstaPartyApp.Services
         public User ValidateUser(string username, string password)
         {
             var user = _context.Users.FirstOrDefault(u => u.Username == username);
+ 
 
             if (BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
             {
@@ -35,7 +37,7 @@ namespace InstaPartyApp.Services
         public User CreateUser(string username, string password)
         {
             var hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
-
+            
             var user = new User { Username = username, PasswordHash = hashedPassword };
             _context.Users.Add(user);
             _context.SaveChanges();
