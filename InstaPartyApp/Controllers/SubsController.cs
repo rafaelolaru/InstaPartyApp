@@ -79,10 +79,10 @@ namespace InstaPartyApp.Controllers
     private int? GetCurrentUserId()
     {
       var userIdClaim = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier);
-      if (userIdClaim != null)
+      if (int.TryParse(userIdClaim.Value, out int userId))
       {
-        return int.Parse(userIdClaim.Value);
-      }
+        return userId;
+      }  
       return null;
     }
   }
