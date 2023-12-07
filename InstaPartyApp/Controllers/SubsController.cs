@@ -60,6 +60,28 @@ namespace InstaPartyApp.Controllers
       return Ok(parties);
     }
 
+    [HttpDelete("deleteFromMyParties/{partyId}")]
+    public IActionResult DeleteFromMyParties(int partyId)
+    {
+      var userId = GetCurrentUserId();
+      if (userId == null)
+      {
+        return Unauthorized("User is not authenticated.");
+      }
+
+      var subscription = _context.Subscriptions
+                                 .FirstOrDefault(s => s.UserId == userId && s.PartyId == partyId);
+
+      if (subscription == null)
+      {
+        return NotFound("Subscription not found.");
+      }
+
+      _context.Subscriptions.Remove(subscription);
+      _context.SaveChanges();
+      return Ok($"Unsubscribed from party with ID: {partyId}");
+    }
+
     [HttpGet("GetMyParties")]
     public IActionResult GetMyParties()
     {
