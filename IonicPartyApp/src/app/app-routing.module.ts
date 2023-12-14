@@ -23,6 +23,10 @@ const routes: Routes = [
   },
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginPage },
+  {
+    path: 'my-parties',
+    loadChildren: () => import('./my-parties/my-parties.module').then( m => m.MyPartiesPageModule)
+  },
 ];
 
 @NgModule({
