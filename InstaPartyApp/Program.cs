@@ -40,14 +40,13 @@ builder.Services.AddAuthorization();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddCors(options =>
 {
-  options.AddDefaultPolicy(
-      builder =>
-      {
-        builder.WithOrigins("http://example.com",  // Replace with the client's URL
-                              "https://anotherdomain.com")
-                 .AllowAnyHeader()
-                 .AllowAnyMethod();
-      });
+ options.AddDefaultPolicy(
+     builder =>
+     {
+       builder.AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+     });
 });
 builder.Services.AddSwaggerGen(c =>
 {
