@@ -92,11 +92,20 @@ namespace InstaPartyApp.Controllers
       }
 
       var myParties = _context.Subscriptions
-                               .Where(s => s.UserId == userId)
-                               .Select(s => s.PartyId)
-                               .ToList();
+                              .Where(s => s.UserId == userId.Value)
+                              .Join(_context.Parties,
+                                    subscription => subscription.PartyId,
+                                    party => party.PartyId,
+                                    (subscription, party) => new {
+                                      partyId = party.PartyId,
+                                      name = party.Name,
+                                      date = party.Date,
+                                      description = party.Description
+                                    })
+                              .ToList();
       return Ok(myParties);
     }
+
     [HttpGet("GetPartyDetails/{partyId}")]
     public IActionResult GetPartyDetails(int partyId)
     {
