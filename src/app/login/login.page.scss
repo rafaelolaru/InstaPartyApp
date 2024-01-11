@@ -1,0 +1,40 @@
+/* For the login page */
+
+.header-title {
+    font-size: 24px;
+  }
+
+  .login-header{
+    --background: #06114F;
+    color: gold;
+  }
+  
+ion-content {
+    --ion-background-color: #6a0dad;
+    --background: #6a0dad; /* Purple background color */
+    color: gold; /* Gold text color */
+   
+
+    .input-field {
+      border: 1px solid black; /* Gold border color */
+      border-radius: 5px;
+      padding: 5px 10px;
+      font-size: 16px;
+      --background: #6a0dad; /* Purple background color */
+      color: gold; /* Gold text color */
+      margin-top: 5px;
+    }
+  
+    .login-button {
+      margin-top: 20px;
+      background-color: black;
+      --background: black;/* Purple background color */
+      color: gold; /* Gold text color */
+    }
+  
+    .error-message {
+      color: #dc3545; /* Red error message color */
+      margin-top: 10px;
+    }
+  }
+  

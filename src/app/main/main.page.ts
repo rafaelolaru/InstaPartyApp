@@ -1,41 +1,51 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router'; // Import Router
-import { Party } from '../party/party.model.js'; // Replace './party.model' with the correct path to your Party interface/model
+// main.page.ts
+
+import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { ApiService } from '../api.service';
+import { DateFormatPipe } from '../date-format.pipe'; // Adjust the path based on your project structure
+
+interface Party {
+  id: number;
+  name: string;
+  date: string;
+  description: string;
+  formattedDate?: string; // Add this property for the formatted date
+}
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.page.html',
   styleUrls: ['./main.page.scss'],
 })
-export class MainPage {
+export class MainPage implements OnInit {
   parties: Party[] = [];
 
-  constructor(private router: Router) {
-    // Initialize or fetch party data
+  constructor(private navCtrl: NavController, private apiService: ApiService, private dateFormatPipe: DateFormatPipe) {}
+
+  ngOnInit() {
     this.getPartyData();
   }
 
-  goToPartyDetails(party: Party) {
-    this.router.navigate(['/details', party.id]); // Navigate to details page with party ID
+  getPartyData() {
+    this.apiService.getAllParties().subscribe(
+      (response) => {
+        // Assuming the API response is an array of parties
+        this.parties = response.map((party: Party) => {
+          return {
+            ...party,
+            formattedDate: this.dateFormatPipe.transform(party.date),
+          };
+        });
+      },
+      (error) => {
+        console.error('Error fetching parties:', error);
+        // Handle error, e.g., show an error message
+      }
+    );
   }
 
-  getPartyData() {
-    // Simulated party data fetch
-    // Replace this with actual API call to fetch party data
-    // For demonstration, I'm using hardcoded data here
-
-    // Assuming you receive an array of party objects from the API
-    const partiesFromAPI: any[] = [
-      { id: 1, name: 'Party Name 1', date: '2023-11-25' },
-      { id: 2, name: 'Party Name 2', date: '2023-11-28' },
-      // Add more party objects as needed
-    ];
-
-    // Map received data to Party interface and assign it to the 'parties' array
-    this.parties = partiesFromAPI.map(party => ({
-      id: party.id,
-      name: party.name,
-      date: party.date,
-    }));
+  goToPartyDetails(partyId: number) {
+    this.navCtrl.navigateForward(`/details/${partyId}`);
   }
 }

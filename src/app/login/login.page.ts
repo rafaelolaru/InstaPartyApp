@@ -30,7 +30,7 @@ export class LoginPage {
       this.apiService.login(this.username, this.password).subscribe(
         (response) => {
           if (response && response.token) {
-            console.log('Login successful');
+            console.log('Login successful',response);
             this.router.navigate(['/main']); // Redirect to the main page upon successful login
           } else {
             this.loginError = 'Invalid username or password';

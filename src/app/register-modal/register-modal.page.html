@@ -1,44 +1,45 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Register</ion-title>
+  <ion-toolbar class="register-header">
+    <ion-title class="header-title">🎉 Register for the Party 🥳</ion-title>
     <ion-buttons slot="end">
-      <ion-button (click)="dismissModal()">Close</ion-button>
+      <ion-button (click)="dismissModal()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
-<ion-content>
+<ion-content class="party-content">
   <ion-item>
     <ion-label position="stacked">Username</ion-label>
-    <ion-input type="text" [(ngModel)]="username"></ion-input>
+    <ion-input type="text" [(ngModel)]="username" class="input-field"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="stacked">Password</ion-label>
-    <ion-input type="password" [(ngModel)]="password"></ion-input>
+    <ion-input type="password" [(ngModel)]="password" class="input-field"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="stacked">Age</ion-label>
-    <ion-input type="text" [(ngModel)]="age"></ion-input>
+    <ion-input type="text" [(ngModel)]="age" class="input-field"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="stacked">Email</ion-label>
-    <ion-input type="email" [(ngModel)]="email"></ion-input>
+    <ion-input type="email" [(ngModel)]="email" class="input-field"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="stacked">City</ion-label>
-    <ion-input type="text" [(ngModel)]="city"></ion-input>
+    <ion-input type="text" [(ngModel)]="city" class="input-field"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="stacked">Phone Number</ion-label>
-    <ion-input type="tel" [(ngModel)]="phoneNumber"></ion-input>
+    <ion-input type="tel" [(ngModel)]="phoneNumber"  class="input-field"></ion-input>
   </ion-item>
 
-  <ion-button expand="block" (click)="register()">Register</ion-button>
+  <ion-button expand="block" (click)="register()" class="register-button">Register</ion-button>
   <div *ngIf="errorMessage" class="error-message">
     {{ errorMessage }}
   </div>

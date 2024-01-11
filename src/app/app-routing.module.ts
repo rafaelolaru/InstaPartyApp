@@ -28,7 +28,7 @@ const routes: Routes = [
     loadChildren: () => import('./my-parties/my-parties.module').then( m => m.MyPartiesPageModule)
   },
   {
-    path: 'details',
+    path: 'details/:id',
     loadChildren: () => import('./details/details.module').then( m => m.DetailsPageModule)
   },
   {
