@@ -1,0 +1,22 @@
+<ion-header class="header-title">
+  <ion-toolbar class="login-header">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="stacked" color="warning">Username</ion-label>
+    <ion-input type="text" [(ngModel)]="username" class="input-field"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked" color="warning">Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password" class="input-field"></ion-input>
+  </ion-item>
+
+  <div class="error-message" *ngIf="loginError">{{ loginError }}</div>
+
+  <ion-button expand="block" (click)="login()" class="login-button">Login</ion-button>
+  <ion-button expand="block" (click)="openRegisterModal()" class="login-button">Register</ion-button>
+</ion-content>

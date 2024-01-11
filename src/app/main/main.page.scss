@@ -1,0 +1,51 @@
+// main.page.scss
+
+.main-header{
+    --background: #06114F;
+    color: gold;
+  }
+
+.card-info{
+    color: gold;
+    padding: auto;
+    font-size: medium;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+
+ion-content {
+    --background: #6a0dad; /* Purple background */
+  }
+  
+  ion-card {
+    --background: #f8f9fa; /* Light background for cards */
+    --ion-box-shadow-color: #6a0dad; /* Purple shadow color */
+    --ion-text-color: #212529;
+    margin: 10px;
+  }
+  
+  ion-card-header {
+    --ion-background-color: #6a0dad; /* Purple header background */
+    --ion-color-primary: #ffd700; /* Gold text color */
+    background: #06114F;
+  }
+  
+  ion-card-title {
+    font-size: 20px;
+    color: #ffd700; /* Gold text color */
+  }
+  
+  ion-card-content {
+    --ion-text-color: #ffd700;
+    font-size: 16px;
+    background: #086466;
+  }
+  
+  ion-toolbar {
+    --ion-background-color: #6a0dad; /* Purple toolbar background */
+    --ion-color-primary: #ffd700; /* Gold text color */
+  }
+  

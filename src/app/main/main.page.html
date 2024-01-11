@@ -1,0 +1,22 @@
+<!-- main.page.html -->
+
+<ion-header>
+  <ion-toolbar class="main-header">
+    <ion-buttons slot="end">
+      <!-- Add the party icon here -->
+      <ion-icon name="wine" size="large" color="light"></ion-icon>
+    </ion-buttons>
+    <ion-title class="title">InstaPartyApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let party of parties" (click)="goToPartyDetails(party.id)">
+    <ion-card-header>
+      <ion-card-title>{{ party.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p class="card-info">Date: {{ party.formattedDate }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
