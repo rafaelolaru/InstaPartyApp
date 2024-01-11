@@ -92,19 +92,42 @@ namespace InstaPartyApp.Controllers
       }
 
       var myParties = _context.Subscriptions
-                               .Where(s => s.UserId == userId)
-                               .Select(s => s.PartyId)
-                               .ToList();
+                              .Where(s => s.UserId == userId.Value)
+                              .Join(_context.Parties,
+                                    subscription => subscription.PartyId,
+                                    party => party.PartyId,
+                                    (subscription, party) => new {
+                                      partyId = party.PartyId,
+                                      name = party.Name,
+                                      date = party.Date,
+                                      description = party.Description
+                                    })
+                              .ToList();
       return Ok(myParties);
     }
 
+    [HttpGet("GetPartyDetails/{partyId}")]
+    public IActionResult GetPartyDetails(int partyId)
+    {
+      var party = _context.Parties.FirstOrDefault(p => p.PartyId == partyId);
+
+      if (party == null)
+      {
+        return NotFound("Party not found.");
+      }
+
+      return Ok(party);
+    }
     private int? GetCurrentUserId()
     {
-      var userIdClaim = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier);
-      if (int.TryParse(userIdClaim.Value, out int userId))
+      // Use the custom claim type "userid"
+      var userIdClaim = _httpContextAccessor.HttpContext.User.FindFirst("userid");
+
+      if (userIdClaim != null && int.TryParse(userIdClaim.Value, out int userId))
       {
         return userId;
-      }  
+      }
+
       return null;
     }
   }

@@ -53,25 +53,25 @@ namespace InstaPartyApp.Controllers
             return Ok(new { Token = token });
         }
 
-        private string GenerateJwtToken(string username,int userId)
-        {
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
-            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+    private string GenerateJwtToken(string username, int userId)
+    {
+      var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
+      var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
-            var claims = new[]
-            {
-                new Claim(JwtRegisteredClaimNames.Sub, username),
-                new Claim(ClaimTypes.NameIdentifier, userId.ToString())
-            };
+      var claims = new[]
+      {
+        new Claim(JwtRegisteredClaimNames.Sub, username),
+        new Claim("userid", userId.ToString()) // Using "userid" as a custom claim type
+    };
 
-            var token = new JwtSecurityToken(
-                issuer: _configuration["Jwt:Issuer"],
-                audience: _configuration["Jwt:Audience"],
-                claims: claims,
-                expires: DateTime.Now.AddMinutes(30),
-                signingCredentials: credentials);
+      var token = new JwtSecurityToken(
+          issuer: _configuration["Jwt:Issuer"],
+          audience: _configuration["Jwt:Audience"],
+          claims: claims,
+          expires: DateTime.Now.AddMinutes(30),
+          signingCredentials: credentials);
 
-            return new JwtSecurityTokenHandler().WriteToken(token);
-        }
+      return new JwtSecurityTokenHandler().WriteToken(token);
     }
+  }
 }

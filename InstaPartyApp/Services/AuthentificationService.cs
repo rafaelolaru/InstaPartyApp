@@ -25,7 +25,7 @@ namespace InstaPartyApp.Services
         {
             var user = _context.Users.FirstOrDefault(u => u.Username == username);
  
-            if(user == null){ return null;}
+            if(user == null) { return null; }
             if (BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
             {
                 return user;
