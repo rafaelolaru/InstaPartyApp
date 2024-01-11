@@ -97,14 +97,28 @@ namespace InstaPartyApp.Controllers
                                .ToList();
       return Ok(myParties);
     }
+    [HttpGet("GetPartyDetails/{partyId}")]
+    public IActionResult GetPartyDetails(int partyId)
+    {
+      var party = _context.Parties.FirstOrDefault(p => p.PartyId == partyId);
 
+      if (party == null)
+      {
+        return NotFound("Party not found.");
+      }
+
+      return Ok(party);
+    }
     private int? GetCurrentUserId()
     {
-      var userIdClaim = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier);
-      if (int.TryParse(userIdClaim.Value, out int userId))
+      // Use the custom claim type "userid"
+      var userIdClaim = _httpContextAccessor.HttpContext.User.FindFirst("userid");
+
+      if (userIdClaim != null && int.TryParse(userIdClaim.Value, out int userId))
       {
         return userId;
-      }  
+      }
+
       return null;
     }
   }
