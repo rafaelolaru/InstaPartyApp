@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rares\\Desktop\\Scoala\\ipafe\\InstaPartyApp\\InstaPartyApp.csproj": {}
+    "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\InstaPartyApp\\InstaPartyApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rares\\Desktop\\Scoala\\ipafe\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rares\\Desktop\\Scoala\\ipafe\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\Rares\\Desktop\\Scoala\\ipafe\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\Rares\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rares\\Desktop\\Scoala\\ipafe\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rares\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,14 +89,14 @@
         }
       }
     },
-    "C:\\Users\\Rares\\Desktop\\Scoala\\ipafe\\InstaPartyApp\\InstaPartyApp.csproj": {
+    "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\InstaPartyApp\\InstaPartyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rares\\Desktop\\Scoala\\ipafe\\InstaPartyApp\\InstaPartyApp.csproj",
+        "projectUniqueName": "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\InstaPartyApp\\InstaPartyApp.csproj",
         "projectName": "InstaPartyApp",
-        "projectPath": "C:\\Users\\Rares\\Desktop\\Scoala\\ipafe\\InstaPartyApp\\InstaPartyApp.csproj",
+        "projectPath": "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\InstaPartyApp\\InstaPartyApp.csproj",
         "packagesPath": "C:\\Users\\Rares\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rares\\Desktop\\Scoala\\ipafe\\InstaPartyApp\\obj\\",
+        "outputPath": "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\InstaPartyApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rares\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -113,8 +113,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Rares\\Desktop\\Scoala\\ipafe\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\Rares\\Desktop\\Scoala\\ipafe\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }

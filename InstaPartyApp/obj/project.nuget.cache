@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zBQDrA+4tbV1NVURetfDfVBjV3/CRUAH3cbDbCoMh7pJtHFiLIZv5lTa/gaH42uTqj40rmBIA4DKRHtwzhLd0A==",
+  "dgSpecHash": "8v+KSR5uzi8RlxBaBOVQfkqZmQGy9UfnbtN7PktlSVxgJBxW3+/KoYFoLCy8nAHJOtgpZr13N27QM9QbRKOimg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rares\\Desktop\\Scoala\\ipafe\\InstaPartyApp\\InstaPartyApp.csproj",
+  "projectFilePath": "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\InstaPartyApp\\InstaPartyApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rares\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Rares\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

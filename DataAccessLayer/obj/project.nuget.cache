@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jV6RNQ9TAsJAcSHV7EZailq+zmFgB3iWfccEHoy+KnxLOy05KhhqO1fW7hld6hUniDobRoW0cQo4GGBb71+uLA==",
+  "dgSpecHash": "UI87tu+vgMsVY4uGlrO1fBRLypkSklHvQFcNHN6GAKsykuzX559CtE2H34mda4Q2VwgdQC4M17SbPcLRjgiz0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rares\\Desktop\\Scoala\\ipafe\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rares\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Rares\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
