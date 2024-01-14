@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\InstaPartyApp\\InstaPartyApp.csproj": {}
+    "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\InstaPartyApp\\InstaPartyApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\olaru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\Rares\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\olaru\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Rares\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -86,25 +81,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\InstaPartyApp\\InstaPartyApp.csproj": {
+    "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\InstaPartyApp\\InstaPartyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\InstaPartyApp\\InstaPartyApp.csproj",
+        "projectUniqueName": "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\InstaPartyApp\\InstaPartyApp.csproj",
         "projectName": "InstaPartyApp",
-        "projectPath": "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\InstaPartyApp\\InstaPartyApp.csproj",
-        "packagesPath": "C:\\Users\\olaru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\InstaPartyApp\\obj\\",
+        "projectPath": "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\InstaPartyApp\\InstaPartyApp.csproj",
+        "packagesPath": "C:\\Users\\Rares\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\InstaPartyApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\olaru\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Rares\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,15 +103,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\olaru\\Documents\\GitHub\\InstaPartyApp\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\Rares\\Desktop\\Scoala\\ProiectMSA\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }
@@ -183,7 +173,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
