@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InstaPartyApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cfcf273cc2668c73022b64610765c0bf71732c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e101fe2967af99c4ca214ecc8b486e3ca8ec95bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("InstaPartyApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InstaPartyApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
